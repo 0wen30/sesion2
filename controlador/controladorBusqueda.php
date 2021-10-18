@@ -11,7 +11,9 @@ if ($hoy > $bd_dia) {
     Consultas::reiniciar();
 }
 if (isset($_GET['navegar'])) {
-    Consultas::modifVisitas($_SESSION['user']);
+    if($_GET['navegar']!=""){
+        Consultas::modifVisitas($_SESSION['user']);
+    }
     if (Consultas::numVisitas($_SESSION['user']) > 0) {
         $intentos = "Intentos restantes: ".Consultas::numVisitas($_SESSION['user']);
         header("location:$_GET[navegar]");
