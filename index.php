@@ -1,5 +1,6 @@
 <?php
 include 'vista/crearSesion.php'; 
+include 'controlador/controladorBusqueda.php'
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -10,6 +11,7 @@ include 'vista/crearSesion.php';
     <link rel="stylesheet" href="vista/assets/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
 </head>
+<body>
     <?php
     if(!isset($_SESSION['user'])){
         include "vista/login.php";
@@ -17,4 +19,7 @@ include 'vista/crearSesion.php';
         include "vista/perfil.php";
     }
     ?>
+    
+    
+    </body>
 </html>

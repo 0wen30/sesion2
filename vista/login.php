@@ -1,4 +1,4 @@
-<body id='body_login'>
+<section id='body_login'>
     <div id='contenedor_login' class="contenedor">
         <div class="contenedor_item"><p class="tit">Login</p></div>
         <input type="text" placeholder="Nombre de Usuario" class="contenedor_item" id="usuario">
@@ -17,5 +17,5 @@
         <button id="registrar" class="contenedor_item">Registrar</button>
         <div class="contenedor_enlace contenedor_item"><p id="enlaceLogin" class="enlace">Login</p></div>
     </div>
-    <script src="vista/assets/login.js"></script>
-</body>
+</section>
+<script src="vista/assets/login.js"></script>

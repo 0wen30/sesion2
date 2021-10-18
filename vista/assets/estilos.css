@@ -1,18 +1,18 @@
 *{margin:0;padding: 0;box-sizing: border-box; font-family: 'Titillium Web', sans-serif;}
+html, body {
+    height:100%;  
+}  
 #body_login{
-    font-size: 16px;
-    height: 100vh;
-    /*background-image: url(login.png);*/
     background-image: url(https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_960_720.jpg);
     background-repeat: repeat;
     background-size: cover;
+    height: 100%;
 }
 #body_sesion{
-    font-size: 16px;
-    height: 100vh;
     background-image: url(sesion.png);
     background-repeat: repeat;
     background-size: auto;
+    height: 100%;
 }
 span{
     font-weight: bold;
@@ -25,7 +25,6 @@ span{
 }
 .contenedor{
     margin: auto;
-    margin-top: 2.5em;
     width: 21.87em;
     background-color: rgba(170, 180, 220, 0.8);
     flex-direction: column;
